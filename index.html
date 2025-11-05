@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" 
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" 
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" 
+    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" 
+    rel="stylesheet"/>
+
+    <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Bali Rihani Tour</title>
+  </head>
+  <body>
+    <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+    <nav>
+      <div class="logo-section">
+        <img src="img/logo.jpeg" alt="Bali Rihani Tour">
+         <a href="#" class="logo">Bali Rihani Tour</a>
+
+      </div>
+      <div class="nav__header">
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home" class="lang-text" data-en="HOME" data-id="BERANDA">HOME</a></li>
+        <li><a href="#about" class="lang-text" data-en="ABOUT" data-id="TENTANG">ABOUT</a></li>
+        <li><a href="#tour" class="lang-text" data-en="TOUR" data-id="TOUR">TOUR</a></li>
+        <li><a href="#package" class="lang-text" data-en="PACKAGE" data-id="PAKET">PACKAGE</a></li>
+        <li><a href="#contact" class="lang-text" data-en="CONTACT" data-id="KONTAK">CONTACT</a></li>
+        <li><a href="#booktrip" class="lang-text" data-en="BOOK TRIP" data-id="PESAN PAKET">BOOK TRIP</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn" a href="#home" class="lang-text" data-en="BOOK TRIP" data-id="PESAN PAKET">BOOK TRIP</button>
+      </div>
+      <div class="language-switcher-wrapper">
+    <div id="languageToggle" class="language-toggle">
+        <span class="lang-label" data-lang-code="id">ID</span>
+        
+        <div id="langHandle" class="lang-handle"></div>
+        
+        <span class="lang-label" data-lang-code="en">EN</span>
+    </div>
+</div>
+    </nav>
+
+    <header id="home">
+      <div class="header__container">
+        <div class="header__content">
+          <p class="lang-text" data-en="WELCOME TO PULAU DEWATA" data-id="SELAMAT DATANG DI PULAU DEWATA">WELCOME TO PULAU DEWATA</p>
+          <h1 >Bali Tour & Travel by Bali Rihani Tour</h1>
+          <div class="header__btns">
+          <button class="btn" class="lang-text" data-en="Book A Trip Now" data-id="PESAN PAKET SEKARANG">Book A Trip Now</button>
+          <a href="#" id="openVideoModal">
+              <span><i class="ri-play-circle-fill"></i></span>
+          </a>
+          </div>
+
+      <div class="video-modal" id="videoModal">
+          <div class="modal-content">
+              <span class="close-button" id="closeVideoModal">&times;</span>
+              <div class="video-container">
+                  <iframe id="youtubePlayer" width="100%" height="100%" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+          </div>
+      </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container destination__container" id="about">
+      <h2 class="section__header lang-text" data-en="Popular Destination" data-id="Destinasi Populer">Popular Destination</h2>
+      <p class="section__description lang-text" data-en="Discover the Most Loved Destination Around the Bali" data-id="Temukan Destinasi Paling Disukai di Sekitar Bali">
+        Discover the Most Loved Destination Around the Bali
+      </p>
+      <div class="destination__grid">
+        <div class="destination__card">
+          <img src="img/gwk.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Garuda Wisnu Kencana</h4>
+              <p>Pecatu, Bali</p>
+            </div>
+            <div class="destination__ratings">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="img/kecak.jpeg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Kecak Dance</h4>
+              <p>Uluwatu, Bali</p>
+            </div>
+            <div class="destination__ratings">
+              <span><i class="ri-star-fill"></i></span>
+              5.0
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="img/melasti.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Pantai Melasti</h4>
+              <p>Pecatu, Bali</p>
+            </div>
+            <div class="destination__ratings">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="img/rmjimbaran.webp" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Seafood Restaurant</h4>
+              <p>Jimbaran, Bali</p>
+            </div>
+            <div class="destination__ratings">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="img/lempuyang.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Pura Lempuyang</h4>
+              <p>Karangasem, Bali</p>
+            </div>
+            <div class="destination__ratings">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="img/lovina.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Pantai Lovina</h4>
+              <p>Singaraja, Bali</p>
+            </div>
+            <div class="destination__ratings">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="img/terasering.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Terasering</h4>
+              <p>Ubud, Bali</p>
+            </div>
+            <div class="destination__ratings">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="img/monkey.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Monkey Forest</h4>
+              <p>Ubud, Bali</p>
+            </div>
+            <div class="destination__ratings">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="img/kintamani.avif" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Kintamani Restaurant</h4>
+              <p>Kintamani, Bali</p>
+            </div>
+            <div class="destination__ratings">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="img/panglipuran.webp" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Desa Panglipuran</h4>
+              <p>Bangli, Bali</p>
+            </div>
+            <div class="destination__ratings">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="img/tanahlot.webp" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Pura Tanah Lot</h4>
+              <p>Tabanan, Bali</p>
+            </div>
+            <div class="destination__ratings">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="img/waterspot.webp" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Waterspot</h4>
+              <p>Nusa Dua, Bali</p>
+            </div>
+            <div class="destination__ratings">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container journey__container" id="tour">
+      <h2 class="section__header lang-text" data-en="Bus Travel, the Easy Way!" data-id="Perjalanan dengan Mobil, Cara yang Mudah!">Bus Travel, the Easy Way!</h2>
+      <p class="section__description lang-text" data-en="Effortless planning for Your Next Adventure" data-id="Perencanaan Mudah untuk Petualangan Anda Berikutnya">
+        Effortless planning for Your Next Adventure
+      </p>
+      <div class="car-stack-container">
+        <div class="car-stack">
+          <img src="img/Hiace.png" alt="Toyota Hiace" class="car car-back">
+          
+          <img src="img/Alphard.png" alt="Toyota Avanza" class="car car-middle">
+          
+          <img src="img/Inova.png" alt="Toyota Alphard" class="car car-front">
+        </div>
+      </div>
+
+
+      <div class="journey__grid">
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-car-line"></i></span>
+            <h4 class="lang-text" data-en="HOLIDAY TOUR" data-id="TOUR LIBURAN">HOLIDAY TOUR</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4 class="lang-text" data-en="Tour Package all-in-one" data-id="Paket Tour All-in-One">Tour Paket All-in-One</h4>
+            <p class="lang-text" data-en="Turn your dream vacation into a seamless and unforgettable reality. Enjoy an all-in-one tour package tailored to your unique interests, schedule, and preferences." data-id="mewujudkan liburan impian Anda menjadi kenyataan yang mulus dan tak terlupakan. Nikmati paket tur all-in-one yang di sesuaikan dengan minat, jadwal, dan preferensi unik Anda.">
+              mewujudkan liburan impian Anda menjadi kenyataan yang mulus dan tak terlupakan. Nikmati paket tur all-in-one yang di sesuaikan dengan minat, jadwal, dan preferensi unik Anda.
+            </p>
+          </div>
+        </div>
+
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-hotel-line"></i></span>
+            <h4 >Hotel Reservation</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4 class="lang-text" data-en="Hotel Reservation" data-id="Rservasi Hotel">Hotel Reservation</h4>
+            <p class="lang-text" data-en="Book hotel rooms throughout Bali. Simply select your dates, and we'll take care of the rest, providing everything from luxury to unique, with instant confirmation and a best-price guarantee." data-id="Pesan kamar hotel di seluruh wilayah bali. Cukup tentukan tanggal, dan sisanya kami urus menyediakan dari mewah hingga unik, dengan konfirmasi instan dan jaminan harga terbaik.">
+              Pesan kamar hotel di seluruh wilayah bali. Cukup tentukan tanggal, dan sisanya kami urus menyediakan dari mewah hingga unik, dengan konfirmasi instan dan jaminan harga terbaik.
+            </p>
+          </div>
+        </div>
+
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-flight-takeoff-line"></i></span>
+            <h4 class="lang-text" data-en="Accomodation" data-id="Akomodasi">Accommodation</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4class="lang-text" data-en="airplane accommodation" data-id="Akomodasi Pesawat">Akomodasi Pesawat</h4>
+            <p class="lang-text" data-en="Book easily, pay securely, and receive your e-ticket instantly. We offer convenience and speed to ensure your journey begins smoothly." data-id="Pesan dengan mudah, bayar dengan aman, dan terima e-tiket instan di tangan Anda. Kami hadirkan kenyamanan dan kecepatan agar perjalanan Anda dimulai tanpa hambatan.">
+              Pesan dengan mudah, bayar dengan aman, dan terima e-tiket instan di tangan Anda. Kami hadirkan kenyamanan dan kecepatan agar perjalanan Anda dimulai tanpa hambatan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container showcase__container" id="package">
+      <div class="showcase__image">
+        <img src="img/balinese.webp" alt="balinese" />
+      </div>
+      <div class="showcase__content">
+        <h4 class="lang-text" data-en="Spiritual Stories, Culture, and Miracles Await You." data-id="Kisah Spiritual, Budaya, dan Keajaiban yang Menanti Anda.">Kisah Spiritual, Budaya, dan Keajaiban yang Menanti Anda.</h4>
+        <p class="lang-text" data-en="Explore the wonders of Bali, where every corner offers a new story waiting to be heard. More than just a holiday destination, the Island of the Gods is a throbbing hub of spiritual life. Witness firsthand the spiritual and artistic richness brought to life daily by the welcoming locals. From the fragrance of the daily Canang Sari offerings to the mesmerizing traditional dances, to the majesty and detail of the carvings on the magnificent temples—you'll discover a profound philosophy of life in every detail. We don't just show you places, but open the door to authentic interactions. Here, every moment is a golden opportunity to admire the diverse culture that inspires, enriches your soul, and leaves you with lasting impressions that will carry with you long after your trip is over. Prepare to be part of Bali's timeless story." data-id="Jelajahi keajaiban di mana setiap sudut Bali menawarkan cerita baru yang menunggu untuk Anda dengarkan. Lebih dari sekadar destinasi liburan, Pulau Dewata adalah pusat kehidupan spiritual yang berdenyut. Saksikan langsung kekayaan spiritual dan artistik yang dihidupkan setiap hari oleh penduduk lokal yang ramah. Dari keharuman persembahan harian Canang Sari yang indah, tarian tradisional yang memukau, hingga keagungan dan detail ukiran pada bangunan pura yang megah—Anda akan menemukan filosofi hidup yang mendalam dalam setiap detailnya. Kami tidak hanya menunjukkan tempat, tetapi membuka pintu menuju interaksi yang otentik. Di sini, setiap momen adalah kesempatan emas untuk mengagumi ragam kebudayaan yang menginspirasi, memperkaya jiwa Anda, dan meninggalkan kesan mendalam yang akan Anda bawa pulang jauh setelah perjalanan berakhir. Bersiaplah untuk menjadi bagian dari cerita abadi Bali.">
+          Jelajahi keajaiban di mana setiap sudut Bali menawarkan cerita baru yang menunggu untuk Anda dengarkan. Lebih dari sekadar destinasi liburan, Pulau Dewata adalah pusat kehidupan spiritual yang berdenyut. Saksikan langsung kekayaan spiritual dan artistik yang dihidupkan setiap hari oleh penduduk lokal yang ramah. Dari keharuman persembahan harian Canang Sari yang indah, tarian tradisional yang memukau, hingga keagungan dan detail ukiran pada bangunan pura yang megah—Anda akan menemukan filosofi hidup yang mendalam dalam setiap detailnya. Kami tidak hanya menunjukkan tempat, tetapi membuka pintu menuju interaksi yang otentik. Di sini, setiap momen adalah kesempatan emas untuk mengagumi ragam kebudayaan yang menginspirasi, memperkaya jiwa Anda, dan meninggalkan kesan mendalam yang akan Anda bawa pulang jauh setelah perjalanan berakhir. Bersiaplah untuk menjadi bagian dari cerita abadi Bali.
+        </p>
+        <div class="showcase__btn">
+          <button class="btn">
+            BOOK A Trip Now
+            <span><i class="ri-arrow-right-line"></i></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container banner__container">
+      <div class="banner__card">
+        <h4>10+</h4>
+        <p>Years Experience</p>
+      </div>
+      <div class="banner__card">
+        <h4>200+</h4>
+        <p>Happy Clients</p>
+      </div>
+      <div class="banner__card">
+        <h4>4.8</h4>
+        <p>Overrall Ratings</p>
+      </div>
+    </section>
+
+    <section class="section__container discover__container">
+      <h2 class="section__header lang-text" data-en="Discover Peace, Culture, and Devotion on every journey" data-id="Temukan Kedamaian, Budaya, dan Pengabdian di setiap perjalanan">
+        Temukan Kedamaian, Budaya, dan Pengabdian di setiap perjalanan
+      </h2>
+      <p class="section__description lang-text" data-en="Experience the spiritual and cultural essence of Bali through authentic interactions and inspiring culture." data-id="Rasakan esensi spiritual dan budaya Bali melalui interaksi otentik dan budaya yang menginspirasi">
+        Rasakan esensi spiritual dan budaya Bali melalui interaksi otentik dan budaya yang menginspirasi
+      </p>
+      <div class="discover__grid">
+        <div class="discover__card">
+          <span><i class="ri-camera-lens-line"></i></span>
+          <h4 class="lang-text" data-en="Your Road, Your Story" data-id="Perjalanan Anda, Cerita Anda">Your Road, Your Story</h4>
+          <p class="lang-text" data-en="Experience the freedom of travel with our comfortable and reliable trips. 
+            Enjoy stunning views along the way while relaxing in spacious seats. 
+            Whether it's a short trip or a long journey, our ensure a smooth and enjoyable ride." data-id="Rasakan kebebasan bepergian dengan perjalanan kami yang nyaman dan andal. Nikmati pemandangan menakjubkan di sepanjang perjalanan sambil bersantai di kursi yang luas. Baik perjalanan singkat maupun jauh, layanan kami menjamin perjalanan yang lancar dan menyenangkan.">
+            Experience the freedom of travel with our comfortable and reliable trips. 
+            Enjoy stunning views along the way while relaxing in spacious seats. 
+            Whether it's a short trip or a long journey, our ensure a smooth and enjoyable ride.
+          </p>
+        </div>
+        <div class="discover__card">
+          <span><i class="ri-ship-line"></i></span>
+          <h4 class="lang-text" data-en="Coastal Wonders" data-id="Keajaiban Pesisir">Coastal Wonders</h4>
+          <p class="lang-text" data-en="Embark on a journey through the mesmerizing coastal wonders. 
+            Enjoy the serene beauty of pristine beaches, stunning cliffs, and breathtaking ocean views, 
+            all from the comfort of our. Let the coastal breeze guide you to unforgettable destinations." data-id="Keajaiban Pesisir Ikuti perjalanan menyusuri keajaiban pesisir yang memukau. Nikmati keindahan pantai yang asri, tebing yang memukau, dan pemandangan laut yang memukau, semuanya dari kenyamanan kabin kami. Biarkan angin pantai memandu Anda ke destinasi yang tak terlupakan.">
+            Embark on a journey through the mesmerizing coastal wonders. 
+            Enjoy the serene beauty of pristine beaches, stunning cliffs, and breathtaking ocean views, 
+            all from the comfort of our. Let the coastal breeze guide you to unforgettable destinations.
+          </p>
+        </div>
+        <div class="discover__card">
+          <span><i class="ri-landscape-line"></i></span>
+          <h4 class="lang-text" data-en="Historic Landmarks" data-id="Tempat Terkenal Bersejarah">Historic Landmarks</h4> 
+          <p class="lang-text" data-en="Explore the charm of historic landmarks on our specially curated tours. Our comfortable will take you through iconic sites, offering insights into their fascinating stories. Sit back, relax, and immerse yourself in the rich history that each destination holds." data-id="Jelajahi pesona landmark bersejarah dalam tur pilihan kami. Tur kami yang nyaman akan membawa Anda menjelajahi situs-situs ikonis, menawarkan wawasan tentang kisah-kisah menarik di dalamnya. Duduk santai, rileks, dan benamkan diri Anda dalam kekayaan sejarah yang tersimpan di setiap destinasi.">
+            Explore the charm of historic landmarks on our specially curated tours. Our comfortable will take you through iconic sites, offering insights into their fascinating stories. Sit back, relax, and immerse yourself in the rich history that each destination holds.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">Bali Rihani Tour</a>
+          </div>
+          <p class="lang-text" data-en="Explore the world with ease and excitement through our all-in-one travel platform. Your journey begins here where smooth planning meets unforgettable road experiences." data-id="Jelajahi dunia dengan mudah dan seru melalui platform perjalanan lengkap kami. Perjalanan Anda dimulai di sini, tempat perencanaan yang lancar bertemu dengan pengalaman berkendara yang tak terlupakan.">
+            Explore the world with ease and excitement through our all-in-one travel platform. Your journey begins here where smooth planning meets unforgettable road experiences.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="https://www.facebook.com/rizalguejakarta" target="_blank" ><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#!"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="https://wa.me/6282112827587" target="_blank"><i class="ri-whatsapp-line"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Bus</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Cruise</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="https://wa.me/6282112827587" target="_blank">
+                <span><i class="ri-phone-fill"></i></span>082112827587
+              </a>
+            </li>
+            <li>
+              <a href="mailto:rz.basalamah@gmail.com" target="_blank">
+                <span><i class="ri-mail-line"></i></span>
+                rz.basalamah@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-2-fill"></i></span> Bali, Indonesia
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Subscribe</h4>
+          <form action="#!">
+            <input type="text" placeholder="Enter your email" />
+            <button class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 Code Prashtt. All rights reserved.
+        <p>
+          Distributed by
+          <a
+            class="text-white"
+            href="https://www.instagram.com/raychiko"
+            target="_blank"
+            >Raychiko Syailendra</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script>
+    // Ganti ID_VIDEO_ANDA_DI_SINI dengan ID video YouTube yang sebenarnya (misal: "dQw4w9WgXcQ")
+    const YOUTUBE_VIDEO_ID = "CwCy__p8jvc"; 
+
+    const openBtn = document.getElementById('openVideoModal');
+    const closeBtn = document.getElementById('closeVideoModal');
+    const modal = document.getElementById('videoModal');
+    const player = document.getElementById('youtubePlayer');
+
+    // Fungsi untuk menutup modal dan menghentikan video
+    function closeAndStopVideo() {
+        modal.style.display = "none";
+        // Menghentikan video
+        player.src = ""; 
+    }
+
+    // Event saat tombol/ikon Play diklik
+    if (openBtn) {
+        openBtn.addEventListener('click', function(e) {
+            e.preventDefault(); // Mencegah link <a> melompat ke atas halaman
+            
+            // 1. Tampilkan modal
+            modal.style.display = "block";
+            
+            // 2. Muat iframe dan putar otomatis
+            // Parameter 'autoplay=1' dan 'rel=0'
+            player.src = `https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&rel=0`;
+        });
+    }
+
+    // Event saat tombol Tutup (X) diklik
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeAndStopVideo);
+    }
+
+    // Event saat user mengklik di luar modal
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            closeAndStopVideo();
+        }
+    });
+</script>
+<script>
+    // ===========================================
+    // LOGIKA PERUBAHAN TEKS (DARI JAWABAN SEBELUMNYA)
+    // ===========================================
+    function setLanguage(langCode) {
+        const elements = document.querySelectorAll('.lang-text');
+        
+        elements.forEach(element => {
+            const translation = element.getAttribute(`data-${langCode}`);
+            if (translation) {
+                element.textContent = translation;
+            }
+        });
+
+        document.documentElement.lang = langCode; 
+        localStorage.setItem('userLanguage', langCode);
+        
+        // Panggil fungsi untuk memperbarui tampilan toggle
+        updateToggleAppearance(langCode); 
+    }
+
+    // Fungsi untuk mendeteksi bahasa browser pengguna
+    function getBrowserLanguage() {
+        const userLang = navigator.language || navigator.userLanguage; 
+        if (userLang.toLowerCase().startsWith('id')) {
+            return 'id';
+        }
+        return 'en';
+    }
+
+    // ===========================================
+    // LOGIKA TOGGLE SWITCH
+    // ===========================================
+    
+    const languageToggle = document.getElementById('languageToggle');
+
+    function updateToggleAppearance(langCode) {
+        // Hapus semua kelas status
+        languageToggle.classList.remove('lang-id-active', 'lang-en-active');
+
+        if (langCode === 'en') {
+            // Aktifkan tampilan EN (handle geser ke kanan)
+            languageToggle.classList.add('lang-en-active');
+        } else {
+            // Aktifkan tampilan ID (handle di kiri)
+            languageToggle.classList.add('lang-id-active');
+        }
+    }
+
+    // Event saat sakelar diklik
+    languageToggle.addEventListener('click', () => {
+        // Tentukan bahasa aktif saat ini
+        const currentLang = localStorage.getItem('userLanguage') || getBrowserLanguage();
+        
+        let newLang;
+        
+        // Balikkan bahasa
+        if (currentLang === 'id') {
+            newLang = 'en';
+        } else {
+            newLang = 'id';
+        }
+        
+        // Terapkan bahasa baru
+        setLanguage(newLang);
+    });
+
+    // Inisialisasi: Fungsi yang dijalankan saat halaman dimuat
+    document.addEventListener('DOMContentLoaded', () => {
+        const storedLang = localStorage.getItem('userLanguage');
+        
+        let initialLang;
+        
+        if (storedLang) {
+            initialLang = storedLang;
+        } else {
+            initialLang = getBrowserLanguage();
+        }
+        
+        // Terapkan bahasa awal dan setel tampilan toggle
+        setLanguage(initialLang);
+    });
+</script>
+  </body>
+</html>
